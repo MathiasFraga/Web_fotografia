@@ -1,0 +1,78 @@
+/* CSS del index */
+
+.card {
+    border: rgba(69, 70, 65, 0.644) solid 2px;
+    
+}
+.card-body {
+    background-color: transparent;
+}
+
+.btn {
+    background-color: rgb(15, 3, 39);
+}
+
+.btn:hover {
+    border-radius: 20px;
+}
+
+.boton-equipo {
+    background-color: rgb(2, 4, 32);
+    border-radius: 20px;
+    padding: 15px 15px;
+}
+
+.a-equipo {
+    text-decoration: none;
+    font-family: "Zcool";
+}
+
+.boton-contacto {
+    background-color: rgb(2, 4, 32);
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+.enlaces {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    
+}
+
+.boton-banner {
+    background-color: rgb(2, 4, 32);
+    border-radius: 50px;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 2px ;
+}
+
+.boton-banner-two {
+    background-color: rgb(2, 4, 32);
+    border-radius: 50px;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.a-contacto {
+    text-decoration: none;
+    font-family: "Permanent Maker";
+}
+
+.wpp-style {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.frase-style {
+    width: 1000px;
+    margin: 30px auto;
+}

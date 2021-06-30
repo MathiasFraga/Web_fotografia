@@ -1,0 +1,40 @@
+
+/* CSS para parrafos */
+
+.p-index {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: map-get($maps,style-two);
+    font-size: nth($ft-size,2);
+}
+
+.p-tutoriales {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: map-get($maps,style-one);
+    font-size: nth($ft-size , 1 );
+}
+
+.p-nosotros {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: nth($ft-size , 3 );
+}
+
+.p-contacto {
+    font-family: 'Times New Roman', Times, serif;
+    font-style:map-get($maps,style-one);
+    font-size: nth($ft-size , 1 );
+}
+
+.p-banner {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-top: 30px;
+}
+
+.p-frase {
+    font-family: "Dancing";
+    color: rgb(2, 4, 32);
+    font-size: 80px;
+}

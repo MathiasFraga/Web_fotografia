@@ -1,0 +1,357 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Fuentes importadas  */
+@font-face {
+  font-family: "Indie Flower";
+  src: url(font/Indie_Flower/IndieFlower-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Permanent Maker";
+  src: url(font/Permanent_Marker/PermanentMarker-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Zcool";
+  src: url(font/ZCOOL_KuaiLe/ZCOOLKuaiLe-Regular.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dancing";
+  src: url(font/Dancing/dancing.ttf) format("truetype");
+  font-display: swap;
+}
+/* Lista texto */
+/* Maps */
+/* CSS para el banner */
+.banner {
+  background: url(imagenes/banner1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 150px 0;
+  text-align: center;
+  position: relative;
+}
+
+.first-seccion {
+  background-color: #655A73;
+  height: 550px;
+}
+
+.second-seccion {
+  background-color: #655A73;
+  margin-top: 40px;
+}
+
+.background-others {
+  background-image: url(imagenes/fondo_web21.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  opacity: 80%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    width: auto;
+  }
+}
+.index-nav {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  opacity: 80%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .index-nav {
+    width: auto;
+  }
+}
+.collapse {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Zcool";
+  padding: 10px;
+  font-size: 18px;
+}
+
+.nav-link {
+  color: #1b0704;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+/* CSS encabezados */
+.h1 {
+  font-family: "Zcool";
+  text-decoration: underline;
+  margin-top: 150px;
+}
+
+.h2 {
+  font-family: "Indie Flower";
+  margin-top: 50px;
+}
+
+.h3 {
+  font-family: "Indie Flower";
+  margin-top: 150px;
+}
+
+.h-nosotros {
+  font-family: "Indie Flower";
+  margin-top: 170px;
+}
+
+.h-tutorial {
+  font-family: "Indie Flower";
+  color: wheat;
+}
+
+.h1-banner {
+  font-size: 82px;
+  letter-spacing: 5px;
+  color: #0a0a24;
+  font-weight: bold;
+}
+
+.h1-banner {
+  font-family: "Indie Flower";
+  margin-top: 30px;
+}
+
+.h1-servicios-index {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: white;
+}
+
+.h4-footer {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+/* CSS para parrafos */
+.p-index {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.p-tutoriales {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.p-nosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.p-contacto {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+
+.p-banner {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding-top: 30px;
+}
+
+.p-frase {
+  font-family: "Dancing";
+  color: #020420;
+  font-size: 80px;
+}
+
+/* CSS del index */
+.card {
+  border: rgba(69, 70, 65, 0.644) solid 2px;
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+.btn {
+  background-color: #0f0327;
+}
+
+.btn:hover {
+  border-radius: 20px;
+}
+
+.boton-equipo {
+  background-color: #020420;
+  border-radius: 20px;
+  padding: 15px 15px;
+}
+
+.a-equipo {
+  text-decoration: none;
+  font-family: "Zcool";
+}
+
+.boton-contacto {
+  background-color: #020420;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-size: 18px;
+}
+
+.enlaces {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.boton-banner {
+  background-color: #020420;
+  border-radius: 50px;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-right: 2px;
+}
+
+.boton-banner-two {
+  background-color: #020420;
+  border-radius: 50px;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.a-contacto {
+  text-decoration: none;
+  font-family: "Permanent Maker";
+}
+
+.wpp-style {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+.frase-style {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+/* mixin */
+/* CSS servicios.html */
+.servicios-style {
+  background: linear-gradient(40deg, #020420, #ffffff);
+  opacity: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #020420;
+  margin-top: 10px;
+}
+
+.table {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.deportiva {
+  width: 100%;
+  height: 100%;
+}
+
+.empresariales {
+  width: 100%;
+  height: 100%;
+}
+
+.eventos {
+  width: 100%;
+  height: 100%;
+}
+
+/* CSS nosotros.html */
+.imgRedonda {
+  width: 190px;
+  height: 190px;
+  border-radius: 140px;
+  border: 10px solid #1c1241;
+}
+
+.imgRedonda:hover {
+  transition: transform 2s;
+  transform: scale(1.1);
+}
+
+.nosotros-style {
+  width: 1200px;
+}
+
+.redes-style {
+  width: 40%;
+  margin: 5px 0 0 50px;
+}
+
+/* CSS contacto.html */
+.formStyle {
+  margin: 10px auto;
+  display: flex;
+  width: 400px;
+  height: 280px;
+  padding: 10px 10px;
+  flex-wrap: wrap;
+  background-color: rgba(8, 7, 37, 0.863);
+  flex-direction: column;
+}
+
+.form-label {
+  color: wheat;
+  font-family: "Indie Flower";
+}
+
+.carousel {
+  width: 80%;
+}
+
+.tutorial-container {
+  margin: 150px 0 100px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+/* CSS encabezados */
+.h1 {
+    font-family: "Zcool";
+    text-decoration: underline;
+    margin-top: 150px
+}
+
+.h2 {
+    font-family: "Indie Flower";
+    margin-top: 50px;
+}
+
+.h3 {
+    font-family: "Indie Flower";
+    margin-top: 150px;
+}
+
+.h-nosotros {
+    font-family: "Indie Flower";
+    margin-top: 170px;
+}
+
+.h-tutorial {
+    font-family: "Indie Flower";
+    color: wheat;
+}
+
+%font-banner {
+    font-size: 82px;
+    letter-spacing: 5px;
+    color: #0a0a24;
+    font-weight: bold;
+}
+
+.h1-banner {
+    font-family: "Indie Flower";
+    @extend %font-banner;
+    margin-top: 30px;
+}
+
+.h1-servicios-index {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+}
+
+.h4-footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}

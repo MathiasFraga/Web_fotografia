@@ -1,0 +1,32 @@
+/* CSS para el banner */
+$padding:300px;
+$margin:100px;
+
+
+.banner {
+    background: url(imagenes/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: $padding/2 0;
+    text-align: center;
+    position: relative;
+}
+
+.first-seccion {
+    background-color: map-get($maps, bg-section);
+    height: 550px;
+}
+
+.second-seccion {
+    background-color: map-get($maps, bg-section);
+    margin-top: ($margin/2)-10;
+}
+
+.background-others {
+    background-image: url(imagenes/fondo_web21.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

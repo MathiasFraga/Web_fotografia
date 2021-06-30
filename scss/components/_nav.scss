@@ -1,0 +1,57 @@
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+    opacity: 80%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+}
+
+@media only screen and (max-width:1024px){
+    .navbar {
+        width:auto;
+    }
+}
+
+.index-nav {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 255, 255);
+    opacity: 80%;
+    width: 100%;
+}
+
+@media only screen and (max-width:1024px){
+    .index-nav {
+        width:auto;
+    }
+}
+
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+    font-family: "Zcool";
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.nav-link {
+    color: rgb(27, 7, 4);
+}
+
+.nav-link:hover  {
+    text-decoration: underline;
+    text-decoration-color:rgb(0, 0, 0);
+}

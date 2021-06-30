@@ -1,0 +1,17 @@
+/* CSS contacto.html */
+
+.formStyle {
+    margin: 10px auto;
+    display: flex;
+    width: 400px;
+    height: 280px;
+    padding: 10px 10px;
+    flex-wrap: wrap;
+    background-color: rgba(8, 7, 37, 0.863);
+    flex-direction: column;
+}
+
+.form-label {
+    color: wheat;
+    font-family: "Indie Flower";
+}
