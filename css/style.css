@@ -66,11 +66,6 @@
   z-index: 2;
 }
 
-@media only screen and (max-width: 1024px) {
-  .navbar {
-    width: auto;
-  }
-}
 .index-nav {
   display: flex;
   justify-content: center;
