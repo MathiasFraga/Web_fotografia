@@ -8,27 +8,14 @@
     position: fixed;
     top: 0;
     z-index: 2;
-
 }
 
-@media only screen and (max-width:1024px){
-    .navbar {
-        width:auto;
-    }
-}
-
-.index-nav {
+.index-menu {
     display: flex;
     justify-content: center;
     background-color:rgb(255, 255, 255);
     opacity: 80%;
     width: 100%;
-}
-
-@media only screen and (max-width:1024px){
-    .index-nav {
-        width:auto;
-    }
 }
 
 .collapse {

@@ -76,3 +76,28 @@
     width: 1000px;
     margin: 30px auto;
 }
+
+@media only screen and (max-width:1024px){
+    .frase-style {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .section-one {
+        width: auto;
+    }
+    .foto-style {
+        width: 80%;
+        height: 80%;
+    }
+
+    .first-seccion {
+        height: auto;
+        width: auto;
+    }
+}
+
+
+
