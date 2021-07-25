@@ -15,15 +15,6 @@
     margin-top: 150px;
 }
 
-.h-nosotros {
-    font-family: "Indie Flower";
-    margin-top: 170px;
-}
-
-.h-tutorial {
-    font-family: "Indie Flower";
-    color: wheat;
-}
 
 %font-banner {
     font-size: 82px;
@@ -41,12 +32,47 @@
 .h1-servicios-index {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: white;
+    color: #0c071a;
+    text-decoration: underline;
 }
 
 .h4-footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: none;
-    color: white;
+    color: #0c071a;
     font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.h1-servicios {
+    color:#f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
+    margin-bottom: 200px;
+}
+
+.h1-stock {
+    color:#f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
+    margin-bottom: 20px;
+}
+
+.h1-tutoriales {
+    color:#f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
+    margin-bottom: 50px;
+}
+
+.h1-nosotros {
+    color:#f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
+}
+
+.h1-contacto {
+    color:#f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
 }

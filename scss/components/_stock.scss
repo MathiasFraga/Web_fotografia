@@ -1,3 +1,24 @@
-.carousel {
-    width: 80%;
-}
+ /* Comienza css de pagina stock */
+
+ .stock-carousel {
+     width: 80%;
+ }
+
+ .container-stock {
+     margin-bottom: 100px;
+ }
+
+ .stock-text {
+     background-color: #f6e1c58c;
+     border-radius: 10px;
+     border: 10px solid #f6e1c5;
+     font-family: "Indie Flower";
+ }
+
+ @media only screen and (max-width: 1024px) {
+     .stock-carousel {
+         width: 100%;
+     }
+ }
+
+ /* Finaliza css de pagina stock */

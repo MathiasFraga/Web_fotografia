@@ -1,11 +1,8 @@
-
 .navbar {
     display: flex;
     justify-content: center;
-    background-color:rgb(255, 255, 255);
-    opacity: 80%;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 2;
 }
@@ -13,32 +10,29 @@
 .index-menu {
     display: flex;
     justify-content: center;
-    background-color:rgb(255, 255, 255);
-    opacity: 80%;
+    background-color:#0c071a;
     width: 100%;
 }
 
 .collapse {
     display: flex;
     justify-content: flex-end;
-    padding-right: 50px;
-    
+    padding-right: 70px;
 }
 
 .nav-item {
     display: flex;
     justify-content: flex-end;
-    font-family: "Zcool";
-    padding: 10px;
-    font-size: 18px;
+    font-family: "Caveat";
+    padding: 20px;
+    font-size: 25px;
 }
 
-
 .nav-link {
-    color: rgb(27, 7, 4);
+    color: rgb(255, 255, 255);
 }
 
 .nav-link:hover  {
     text-decoration: underline;
-    text-decoration-color:rgb(0, 0, 0);
+    text-decoration-color:rgb(255, 255, 255);
 }

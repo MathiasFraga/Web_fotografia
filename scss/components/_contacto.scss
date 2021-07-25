@@ -1,12 +1,10 @@
 /* CSS contacto.html */
 
-.formStyle {
+.form-style {
     margin: 10px auto;
-    display: flex;
-    width: 400px;
-    height: 280px;
+    width: 450px;
+    height: 470px;
     padding: 10px 10px;
-    flex-wrap: wrap;
     background-color: rgba(8, 7, 37, 0.863);
     flex-direction: column;
 }
@@ -14,4 +12,28 @@
 .form-label {
     color: wheat;
     font-family: "Indie Flower";
+}
+
+.contacto-text {
+    background-color: #f6e1c58c;
+    border-radius: 10px;
+    border: 10px solid #f6e1c5;
+    font-family: "Indie Flower";
+    height: 300px;
+}
+
+.form-send {
+    width: 200px;
+    margin-left: 120px;
+}
+
+.mensaje {
+    height: 50px;
+    overflow: scroll;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contacto-text {
+        height: 250px;
+    }
 }

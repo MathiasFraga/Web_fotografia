@@ -30,9 +30,15 @@
 </head>
 
 <body>
-
   <!-- Comienza el header -->
-  <nav class="index-menu navbar navbar-expand-lg navbar-light bg-light">
+  <header>
+    <h1 class="title-web text-center d-none d-lg-block mb-2">Camara's Estudio</h1>
+    <h4 class="subtitle-web text-center d-none d-lg-block mb-3"> Capturando Momentos</h4>
+  </header>
+  <!-- Finaliza el header -->
+
+  <!-- Comienzo de nav -->
+  <nav class="index-menu navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html"><img src="css/imagenes/imagen_logo2.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -72,116 +78,159 @@
       </div>
     </div>
   </nav>
-  <!-- Finaliza el header -->
+  <!-- Finaliza el nav -->
 
-
-  <!-- Banner -->
-  <section class="section-one">
-    <div class="banner">
-      <h1 class="h1-banner">Cámara Estudio</h1>
-      <p class="p-banner">Capturando momentos</p>
-      <ul class="enlaces">
-        <li><a href="servicios.html" class="boton-banner" title="Acceso a página de servicios">Servicios</a></li>
-        <li><a href="stock.html" class="boton-banner-two" title="Acceso a página de stock">Stock de fotos</a></li>
-      </ul>
+  <!-- Comienza primera sección -->
+  <div class="container">
+    <div id="carouselExampleIndicators" class="style-carousel carousel slide" data-bs-ride="carousel">¡¡
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="css/imagenes/Fito.jpg" class="d-block w-100" alt="Recital Fito Paez">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Carnaval.jpg" class="d-block w-100" alt="Desfile de Carnaval en Montevideo, Uruguay">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Ballet.jpg" class="d-block w-100" alt="Ensayo del Ballet Nacional del Sodre">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Buitres.jpg" class="d-block w-100" alt="Recital del grupo Buitres">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Campus.jpg" class="d-block w-100" alt="Evetno Campus Party en Maldonado,Uruguay">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Centenario.jpg" class="d-block w-100" alt="Estadio Centenario vacio">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Riquelme.jpg" class="d-block w-100" alt="Riquelme en partido homenaje">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Suarez.jpg" class="d-block w-100" alt="Suarez en partido homenaje">
+        </div>
+        <div class="carousel-item">
+          <img src="css/imagenes/Tango.jpg" class="d-block w-100" alt="Festival de Tango en Montevideo,Uruguay">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </section>
-  <!-- Finaliza banner -->
+  </div>
 
-  <!-- Comienza 1ra Seccion -->
-  <section class="section-two">
-    <div class="frase-style container d-flex flex-column">
-      <p class="p-frase text-center">“El componente más importante de una cámara está detrás de ella”</p>
-      <p class="p-frase text-center"> Ansel Adams</p>
-    </div>
-  </section>
+  <!-- Finaliza primera seccion -->
+
+  <!-- Comienza 2da Seccion -->
+  <div class="frase-style container d-flex flex-column">
+    <p class="p-frase text-center">“El componente más importante de una cámara está detrás de ella”</p>
+    <p class="p-frase text-center"> Ansel Adams</p>
+  </div>
   <!-- Finaliza 2da seccion -->
 
-  <!-- Comienza 2da sección -->
+  <!-- Comienza 3ra sección -->
   <section class="first-seccion d-flex flex-column align-items-center">
     <h1 class="h1-servicios-index text-center p-4">Nuestros servicios</h1>
-    <div class="container-sm d-flex justify-content-center">
-      <div class="row">
-        <div class="col-lg-4 col-sm-12">
-          <div class="card" style="width: 20rem;">
+    <div class="container d-flex justify-content-center pb-5">
+      <div class="row row-card">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
             <img src="css/imagenes/MFS_6466.jpg" class="card-img-top"
               alt="Fotografia de Luis Suarez en el Estadio Centenario">
             <div class="card-body">
               <h5 class="card-title text-center">Fotografia Deportiva</h5>
               <p class="card-text">Servicios de fotografia deportiva en general.</p>
-              <a href="servicios.html#fotos-deporte" class="btn btn-primary d-flex justify-content-center">Conocer más</a>
+              <a href="servicios.html#fotos-deporte" class="btn btn-primary d-flex justify-content-center">Conocer
+                más</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card" style="width: 20rem;">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
             <img src="css/imagenes/MFS_3084.jpg" class="card-img-top" alt="Fotografia de recital de grupo Babasonicos">
             <div class="card-body">
               <h5 class="card-title text-center">Fotografia de eventos</h5>
               <p class="card-text">Contrata nuestro servicio de fotografía de eventos.</p>
-              <a href="servicios.html#fotos-evento" class="btn btn-primary d-flex justify-content-center">Conocer más</a>
+              <a href="servicios.html#fotos-evento" class="btn btn-primary d-flex justify-content-center">Conocer
+                más</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-12">
-          <div class="card" style="width: 20rem;">
+        <div class="col-lg-4 col-md-12">
+          <div class="card">
             <img src="css/imagenes/DSC_0319.jpg" class="card-img-top"
               alt="Fotografia corporativa de festival Campus Party">
             <div class="card-body">
               <h5 class="card-title text-center">Fotografia corporativa</h5>
               <p class="card-text">Servicio de fotografia corporativa para tu empresa</p>
-              <a href="servicios.html#fotos-empresa" class="btn btn-primary d-flex justify-content-center">Conocer más</a>
+              <a href="servicios.html#fotos-empresa" class="btn btn-primary d-flex justify-content-center">Conocer
+                más</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Finaliza 2da sección -->
+  <!-- Finaliza 3ra sección -->
 
-  <!-- Comienza 3ra sección -->
-  <h2 class="h2 text-center display-4 p-4">¿Quiénes somos?</h2>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-sm-12">
-        <p class="p-index text-center"> Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ab officiis nesciunt
-          necessitatibus eius aliquam vel nihil rerum
-          eligendi sit, autem nisi culpa sint
-          quos aliquid, commodi fuga venia m vitae quisquam.
-        </p>
-        <p class="p-index text-center"> Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ab officiis nesciunt
-          necessitatibus eius aliquam vel nihil rerum
-          eligendi sit, autem nisi culpa sint
-          quos aliquid, commodi fuga veniam vitae quisquam.
-        </p>
-        <p class="p-index text-center"> Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Ab officiis nesciunt
-          necessitatibus eius aliquam vel nihil rerum
-          eligendi sit, autem nisi culpa sint
-          quos aliquid, commodi fuga veniam vitae quisquam.
-        </p>
-      </div>
-      <div class="col-lg-8 col-sm-12">
-        <img src="css/imagenes/Equipo_trabajo.jpg" alt="Fotografia random de equipo de trabajo" class="foto-style">
+  <!-- Comienza 4ta sección -->
+  <div class="section-equipo-index clearfix">
+    <div class="container">
+      <div class="equipo-index">
+        <img src="css/imagenes/Equipo_trabajo.jpg" alt="Foto equipo de trabajo" class="foto-style mb-3 img-fluid">
+        <div class="texto-equipo text-center p-4">
+          <h2 class="text-center display-5">¿Quiénes somos?</h2>
+          <p class="p-index text-center"> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ab officiis nesciunt
+            necessitatibus eius aliquam vel nihil rerum
+            eligendi sit, autem nisi culpa sint
+            quos aliquid, commodi fuga venia m vitae quisquam.
+          </p>
+        </div>
+        <a href="nosotros.html" class="a-equipo" title="Acceso a sección del equipo de trabajo">
+          <button type="button" class="boton-equipo btn btn-primary btn-sm d-block mx-auto mt-2">Conoce nuestro
+            equipo</button>
       </div>
     </div>
-    <a href="nosotros.html" class="a-equipo">
-      <button type="button" class="boton-equipo btn btn-primary btn-sm d-block mx-auto mt-2">Conoce nuestro
-        equipo!</button>
-    </a>
   </div>
-  </div>
-  <!-- Finaliza 3ra sección -->
+  <!-- Finaliza 4ta sección -->
+
 
   <!-- Inicia el footer -->
   <section class="second-seccion d-flex flex-column align-items-center">
     <h4 class="h4-footer text-center display-4 p-4">Seguinos en nuestras redes</h4>
     <div class="container d-flex justify-content-center">
-      <a href="https://www.instagram.com/mato.fraga/"> <img src="css/imagenes/instagram.png" alt="Logo de instagram">
+      <a href="https://www.instagram.com/mato.fraga/" title="Acceso directo a Instagram"> <img
+          src="css/imagenes/instagram.png" alt="Logo de instagram">
       </a>
-      <a href="https://www.facebook.com/mato.fraga/"> <img src="css/imagenes/facebook.png" alt="Logo de facebook"> </a>
+      <a href="https://www.facebook.com/mato.fraga/" title="Acceso directo a Facebook"> <img
+          src="css/imagenes/facebook.png" alt="Logo de facebook"> </a>
     </div>
     <a href="contacto.html" class="a-contacto" title="Acceso directo a página de contacto">
       <button type="button" class="boton-contacto btn btn-primary btn-lg d-block mx-auto mt-2">Contactate con
@@ -192,7 +241,8 @@
 
   <!-- Whatsapp en fixed -->
   <a href="http://api.whatsapp.com/send?phone=59891230510&text=Quiero ponerme en contacto " target=_blank
-    class="wpp-style"> <img src="css/imagenes/whatsapp.png" alt=""> </a>
+    class="wpp-style" title="Acceso directo a whatsapp"> <img src="css/imagenes/whatsapp.png"
+      alt="Contacto directo a whatsapp"> </a>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">

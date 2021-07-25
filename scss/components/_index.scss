@@ -1,9 +1,10 @@
 /* CSS del index */
-
 .card {
     border: rgba(69, 70, 65, 0.644) solid 2px;
-    
+    width: 20rem;
 }
+
+
 .card-body {
     background-color: transparent;
 }
@@ -13,13 +14,11 @@
 }
 
 .btn:hover {
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
-.boton-equipo {
-    background-color: rgb(2, 4, 32);
-    border-radius: 20px;
-    padding: 15px 15px;
+.style-carousel {
+    align-items: center;
 }
 
 .a-equipo {
@@ -34,36 +33,16 @@
     font-size: 18px;
 }
 
+.a-contacto {
+    text-decoration: none;
+    font-family: "Zcool";
+}
+
 .enlaces {
     list-style: none;
     display: flex;
     justify-content: center;
     padding-top: 20px;
-    
-}
-
-.boton-banner {
-    background-color: rgb(2, 4, 32);
-    border-radius: 50px;
-    padding: 15px 15px;
-    text-decoration: none;
-    color: white;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 2px ;
-}
-
-.boton-banner-two {
-    background-color: rgb(2, 4, 32);
-    border-radius: 50px;
-    padding: 15px 15px;
-    text-decoration: none;
-    color: white;    
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.a-contacto {
-    text-decoration: none;
-    font-family: "Permanent Maker";
 }
 
 .wpp-style {
@@ -74,30 +53,141 @@
 
 .frase-style {
     width: 1000px;
-    margin: 30px auto;
+    margin: 80px auto;
 }
 
-@media only screen and (max-width:1024px){
+.first-seccion {
+    background-color: #f6e1c58a;
+}
+
+.section-equipo-index {
+    margin: 100px;
+}
+
+.equipo-index {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-style {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: 200px;
+}
+
+.texto-equipo {
+    background-color: #f6e1c5;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 350px;
+}
+
+.boton-equipo {
+    background-color: rgb(2, 4, 32);
+    border-radius: 20px;
+    padding: 15px 15px;
+    position: absolute;
+    left: 85px;
+    bottom: 50px;
+}
+
+.second-seccion {
+    background-color: #f6e1c58a;
+}
+
+.title-web {
+    color: #f6e1c5;
+    font-size: 70px;
+    font-family: "Caveat";
+}
+
+.subtitle-web {
+    color: #f6e1c5;
+    font-size: 40px;
+    font-family: "Amatic";
+}
+
+@media only screen and (max-width: 768px) {
+    .section-equipo-index {
+        height: 500px;
+    }
+
+    .foto-style {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto-equipo {
+        left: 80px;
+        top: 250px;
+    }
+
+    .boton-equipo {
+        left: 170px;
+        top: 500px;
+    }
+
+    .row-card {
+        margin-left: 80px;
+    }
+
     .frase-style {
         width: auto;
         height: auto;
-    }
-}
-
-@media only screen and (max-width: 1024px){
-    .section-one {
-        width: auto;
-    }
-    .foto-style {
-        width: 80%;
-        height: 80%;
     }
 
     .first-seccion {
         height: auto;
         width: auto;
+        display: block;
+        margin: auto;
     }
 }
 
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .section-equipo-index {
+        height: 800px;
+    }
 
+    .foto-style {
+        display: block;
+        margin: auto;
+        height: 100%;
+        width: 100%;
+    }
 
+    .texto-equipo {
+        left: 160px;
+        top: 350px;
+    }
+
+    .boton-equipo {
+        left: 250px;
+        top: 660px;
+    }
+
+    .row-card {
+        margin-left: 170px;
+    }
+
+    .frase-style {
+        width: auto;
+        height: auto;
+    }
+
+    .first-seccion {
+        height: auto;
+        width: auto;
+        display: block;
+        margin: auto;
+    }
+}
+
+/* Finaliza el css del Index */

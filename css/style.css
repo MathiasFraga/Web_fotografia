@@ -24,44 +24,59 @@
   src: url(font/Dancing/dancing.ttf) format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "Caveat";
+  src: url(font/Caveat/Caveat-VariableFont_wght.ttf) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Amatic";
+  src: url(font/Amatic/AmaticSC-Regular.ttf) format("truetype");
+  font-display: swap;
+}
 /* Lista texto */
 /* Maps */
 /* CSS para el banner */
+/* 
 .banner {
-  background: url(imagenes/banner1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 150px 0;
-  text-align: center;
-  position: relative;
+    background: url(imagenes/banner1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: $padding/2 0;
+    text-align: center;
+    position: relative;
 }
 
 .first-seccion {
-  background-color: #655A73;
-  height: 550px;
+    background-color: map-get($maps, bg-section);
+    height: 550px;
 }
 
 .second-seccion {
-  background-color: #655A73;
-  margin-top: 40px;
+    background-color: map-get($maps, bg-section);    
+    margin-top: ($margin/2)-10;
 }
 
 .background-others {
-  background-image: url(imagenes/fondo_web21.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+    background-image: url(imagenes/fondo_web21.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+body {
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("imagenes/fondo6.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
-  position: relative;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: white;
-  opacity: 80%;
   width: 100%;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 2;
 }
@@ -69,32 +84,31 @@
 .index-menu {
   display: flex;
   justify-content: center;
-  background-color: white;
-  opacity: 80%;
+  background-color: #0c071a;
   width: 100%;
 }
 
 .collapse {
   display: flex;
   justify-content: flex-end;
-  padding-right: 50px;
+  padding-right: 70px;
 }
 
 .nav-item {
   display: flex;
   justify-content: flex-end;
-  font-family: "Zcool";
-  padding: 10px;
-  font-size: 18px;
+  font-family: "Caveat";
+  padding: 20px;
+  font-size: 25px;
 }
 
 .nav-link {
-  color: #1b0704;
+  color: white;
 }
 
 .nav-link:hover {
   text-decoration: underline;
-  text-decoration-color: black;
+  text-decoration-color: white;
 }
 
 /* CSS encabezados */
@@ -114,16 +128,6 @@
   margin-top: 150px;
 }
 
-.h-nosotros {
-  font-family: "Indie Flower";
-  margin-top: 170px;
-}
-
-.h-tutorial {
-  font-family: "Indie Flower";
-  color: wheat;
-}
-
 .h1-banner {
   font-size: 82px;
   letter-spacing: 5px;
@@ -139,14 +143,49 @@
 .h1-servicios-index {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
-  color: white;
+  color: #0c071a;
+  text-decoration: underline;
 }
 
 .h4-footer {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-decoration: none;
-  color: white;
+  color: #0c071a;
   font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.h1-servicios {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
+  margin-bottom: 200px;
+}
+
+.h1-stock {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
+  margin-bottom: 20px;
+}
+
+.h1-tutoriales {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
+  margin-bottom: 50px;
+}
+
+.h1-nosotros {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
+}
+
+.h1-contacto {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
 }
 
 /* CSS para parrafos */
@@ -165,6 +204,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 20px;
+  color: #f6e1c5;
 }
 
 .p-contacto {
@@ -181,9 +221,9 @@
 }
 
 .p-frase {
-  font-family: "Dancing";
-  color: #020420;
-  font-size: 80px;
+  font-family: "Amatic";
+  color: #f6e1c5;
+  font-size: 60px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -191,9 +231,22 @@
     font-size: 10vh;
   }
 }
+.p-servicios {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.p-stock {
+  font-family: "Arial";
+  font-style: italic;
+  font-size: 14px;
+}
+
 /* CSS del index */
 .card {
   border: rgba(69, 70, 65, 0.644) solid 2px;
+  width: 20rem;
 }
 
 .card-body {
@@ -205,13 +258,11 @@
 }
 
 .btn:hover {
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
-.boton-equipo {
-  background-color: #020420;
-  border-radius: 20px;
-  padding: 15px 15px;
+.style-carousel {
+  align-items: center;
 }
 
 .a-equipo {
@@ -226,35 +277,16 @@
   font-size: 18px;
 }
 
+.a-contacto {
+  text-decoration: none;
+  font-family: "Zcool";
+}
+
 .enlaces {
   list-style: none;
   display: flex;
   justify-content: center;
   padding-top: 20px;
-}
-
-.boton-banner {
-  background-color: #020420;
-  border-radius: 50px;
-  padding: 15px 15px;
-  text-decoration: none;
-  color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-right: 2px;
-}
-
-.boton-banner-two {
-  background-color: #020420;
-  border-radius: 50px;
-  padding: 15px 15px;
-  text-decoration: none;
-  color: white;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.a-contacto {
-  text-decoration: none;
-  font-family: "Permanent Maker";
 }
 
 .wpp-style {
@@ -265,70 +297,231 @@
 
 .frase-style {
   width: 1000px;
-  margin: 30px auto;
+  margin: 80px auto;
 }
 
-@media only screen and (max-width: 1024px) {
-  .frase-style {
-    width: auto;
-    height: auto;
-  }
+.first-seccion {
+  background-color: #f6e1c58a;
 }
-@media only screen and (max-width: 1024px) {
-  .section-one {
-    width: auto;
+
+.section-equipo-index {
+  margin: 100px;
+}
+
+.equipo-index {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.foto-style {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-left: 200px;
+}
+
+.texto-equipo {
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 350px;
+}
+
+.boton-equipo {
+  background-color: #020420;
+  border-radius: 20px;
+  padding: 15px 15px;
+  position: absolute;
+  left: 85px;
+  bottom: 50px;
+}
+
+.second-seccion {
+  background-color: #f6e1c58a;
+}
+
+.title-web {
+  color: #f6e1c5;
+  font-size: 70px;
+  font-family: "Caveat";
+}
+
+.subtitle-web {
+  color: #f6e1c5;
+  font-size: 40px;
+  font-family: "Amatic";
+}
+
+@media only screen and (max-width: 768px) {
+  .section-equipo-index {
+    height: 500px;
   }
 
   .foto-style {
-    width: 80%;
-    height: 80%;
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .texto-equipo {
+    left: 80px;
+    top: 250px;
+  }
+
+  .boton-equipo {
+    left: 170px;
+    top: 500px;
+  }
+
+  .row-card {
+    margin-left: 80px;
+  }
+
+  .frase-style {
+    width: auto;
+    height: auto;
   }
 
   .first-seccion {
     height: auto;
     width: auto;
+    display: block;
+    margin: auto;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .section-equipo-index {
+    height: 800px;
+  }
+
+  .foto-style {
+    display: block;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  .texto-equipo {
+    left: 160px;
+    top: 350px;
+  }
+
+  .boton-equipo {
+    left: 250px;
+    top: 660px;
+  }
+
+  .row-card {
+    margin-left: 170px;
+  }
+
+  .frase-style {
+    width: auto;
+    height: auto;
+  }
+
+  .first-seccion {
+    height: auto;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+}
+/* Finaliza el css del Index */
 /* mixin */
-/* CSS servicios.html */
-.servicios-style {
-  background: linear-gradient(40deg, #020420, #ffffff);
-  opacity: 80%;
-  font-size: 18px;
-  font-weight: bold;
+/* Inicia CSS servicios.html */
+.table-others {
+  text-align: center;
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  width: 220px;
+  bottom: -50px;
+  left: 50px;
+}
+
+.table-eventos {
+  text-align: center;
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  width: 220px;
+  bottom: -50px;
+  right: 50px;
+}
+
+.section-empresarial {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
+.section-servicios {
+  margin: 50px;
+}
+
+.servicio {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
-  color: #020420;
-  margin-top: 10px;
 }
 
-.table {
-  text-align: center;
-  height: 100%;
-  width: 100%;
+.foto-servicio {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  align-content: center;
 }
 
-.deportiva {
-  width: 100%;
-  height: 100%;
+.texto-servicio {
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: -180px;
+  width: 500px;
+  font-family: "Indie Flower";
 }
 
-.empresariales {
-  width: 100%;
-  height: 100%;
+.texto-evento {
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: -180px;
+  width: 500px;
+  font-family: "Indie Flower";
 }
 
-.eventos {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 1024px) {
+  .section-empresarial {
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
 }
+@media only screen and (max-width: 620px) {
+  .texto-servicio {
+    width: 80%;
+  }
 
+  .texto-evento {
+    width: 80%;
+  }
+}
+/* Finaliza CSS servicios.html */
 /* CSS nosotros.html */
 .imgRedonda {
-  width: 190px;
-  height: 190px;
+  width: 150px;
+  height: 150px;
   border-radius: 140px;
   border: 10px solid #1c1241;
+  display: block;
+  margin: auto;
 }
 
 .imgRedonda:hover {
@@ -336,23 +529,90 @@
   transform: scale(1.1);
 }
 
-.nosotros-style {
-  width: 1200px;
-}
-
 .redes-style {
-  width: 40%;
-  margin: 5px 0 0 50px;
+  width: 20%;
+  display: block;
+  margin: auto;
 }
 
-/* CSS contacto.html */
-.formStyle {
-  margin: 10px auto;
+.about-us {
+  background-color: #f6e1c5;
+  display: block;
+  position: absolute;
+  width: 500px;
+  font-family: "Indie Flower";
+  left: 300px;
+  bottom: -200px;
+}
+
+.section-equipo {
+  margin-bottom: 250px;
+}
+
+.equipo {
+  position: relative;
+  width: 100%;
   display: flex;
-  width: 400px;
-  height: 280px;
+  justify-content: center;
+}
+
+.photo-aboutus {
+  margin-right: 24px;
+}
+
+.section-personal {
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .redes-style {
+    width: 5%;
+  }
+
+  .about-us {
+    display: block;
+    position: absolute;
+    width: 400px;
+    left: 160px;
+    bottom: -280px;
+  }
+
+  .section-equipo {
+    margin-bottom: 300px;
+  }
+
+  .h1-nosotros {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .redes-style {
+    width: 5%;
+  }
+
+  .about-us {
+    display: block;
+    position: absolute;
+    width: 300px;
+    left: 100px;
+    bottom: -400px;
+  }
+
+  .section-equipo {
+    margin-bottom: 450px;
+  }
+
+  .h1-nosotros {
+    font-size: 100px;
+  }
+}
+/* CSS contacto.html */
+.form-style {
+  margin: 10px auto;
+  width: 450px;
+  height: 470px;
   padding: 10px 10px;
-  flex-wrap: wrap;
   background-color: rgba(8, 7, 37, 0.863);
   flex-direction: column;
 }
@@ -362,12 +622,67 @@
   font-family: "Indie Flower";
 }
 
-.carousel {
+.contacto-text {
+  background-color: #f6e1c58c;
+  border-radius: 10px;
+  border: 10px solid #f6e1c5;
+  font-family: "Indie Flower";
+  height: 300px;
+}
+
+.form-send {
+  width: 200px;
+  margin-left: 120px;
+}
+
+.mensaje {
+  height: 50px;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 1024px) {
+  .contacto-text {
+    height: 250px;
+  }
+}
+/* Comienza css de pagina stock */
+.stock-carousel {
   width: 80%;
 }
 
-.tutorial-container {
-  margin: 150px 0 100px 0;
+.container-stock {
+  margin-bottom: 100px;
 }
+
+.stock-text {
+  background-color: #f6e1c58c;
+  border-radius: 10px;
+  border: 10px solid #f6e1c5;
+  font-family: "Indie Flower";
+}
+
+@media only screen and (max-width: 1024px) {
+  .stock-carousel {
+    width: 100%;
+  }
+}
+/* Finaliza css de pagina stock */
+/* Inicia css tutorial */
+.tutorial-text {
+  background-color: #f6e1c58c;
+  border-radius: 10px;
+  border: 10px solid #f6e1c5;
+  font-family: "Indie Flower";
+}
+
+@media only screen and (max-width: 1024px) {
+  .video-style {
+    display: block;
+    margin: auto;
+    height: 500px;
+    width: 100%;
+  }
+}
+/* Finaliza css tutorial */
 
 /*# sourceMappingURL=style.css.map */

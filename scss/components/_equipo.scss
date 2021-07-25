@@ -1,9 +1,11 @@
 /* CSS nosotros.html */
 .imgRedonda {
-    width: 190px;
-    height: 190px;
+    width: 150px;
+    height: 150px;
     border-radius: 140px;
     border: 10px solid rgb(28, 18, 65);
+    display: block;
+    margin: auto;
 }
 
 .imgRedonda:hover {
@@ -11,11 +13,82 @@
     transform: scale(1.1);
 }
 
-.nosotros-style {
-    width: 1200px;
+.redes-style {
+    width: 20%;
+    display: block;
+    margin: auto;
 }
 
-.redes-style {
-    width: 40%;
-    margin: 5px 0 0 50px;
+.about-us {
+    background-color: #f6e1c5;
+    display: block;
+    position: absolute;
+    width: 500px;
+    font-family: "Indie Flower";
+    left: 300px;
+    bottom: -200px;
+}
+
+.section-equipo {
+    margin-bottom: 250px;
+}
+
+.equipo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-aboutus {
+    margin-right: 24px;
+}
+
+.section-personal {
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+    .redes-style {
+        width: 5%;
+    }
+
+    .about-us {
+        display: block;
+        position: absolute;
+        width: 400px;
+        left: 160px;
+        bottom: -280px;
+    }
+
+    .section-equipo {
+        margin-bottom: 300px;
+    }
+
+    .h1-nosotros {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .redes-style {
+        width: 5%;
+    }
+
+    .about-us {
+        display: block;
+        position: absolute;
+        width: 300px;
+        left: 100px;
+        bottom: -400px;
+    }
+
+    .section-equipo {
+        margin-bottom: 450px;
+    }
+
+    .h1-nosotros {
+        font-size: 100px;
+    }
 }
